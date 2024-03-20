@@ -20,7 +20,7 @@ def common( appVer, lastCommitMessage, status) {
                 " Jenkins : ${BUILD_URL} \n " +
                 " Commit Message : ${lastCommitMessage} "
       emailext body: body,
-                subject: "${appVer} was deployed ${status}",
+                subject: "jenkins job ${appVer} was deployed ${status}",
                 to: 'saravanan.resume@gmail.com',
                 from: 'jenkins'
 
