@@ -1,17 +1,17 @@
-def success() {
+def success( appVer, lastCommitMessage) {
 
-      sendemail("SUCCESS" )
+      sendmsg( appVer, lastCommitMessage, "SUCCESS" )
 
 }
 
-def failed() {
+def failed( appVer, lastCommitMessage) {
       
-      sendemail("FAILED" )
+      sendmsg( appVer, lastCommitMessage, "FAILED" )
 
 }
 
 
-def sendemail(status) {
+def sendmsg( appVer, lastCommitMessage, status) {
 
       echo "jenkins job ${status} ${appVer}"
       body = "jenkins job ${status} \n " +
