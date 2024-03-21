@@ -1,17 +1,17 @@
-def success( appVer, lastCommitMessage) {
+def success() {
 
-      common( appVer, lastCommitMessage, "SUCCESS" )
+      email("SUCCESS" )
 
 }
 
-def failed( appVer, lastCommitMessage) {
+def failed() {
       
-      common( appVer, lastCommitMessage, "FAILED" )
+      email("FAILED" )
 
 }
 
 
-def common( appVer, lastCommitMessage, status) {
+def email(status) {
 
       echo "jenkins job ${status} ${appVer}"
       body = "jenkins job ${status} \n " +
