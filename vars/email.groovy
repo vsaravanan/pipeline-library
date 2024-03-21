@@ -1,17 +1,17 @@
 def success() {
 
-      email("SUCCESS" )
+      sendemail("SUCCESS" )
 
 }
 
 def failed() {
       
-      email("FAILED" )
+      sendemail("FAILED" )
 
 }
 
 
-def email(status) {
+def sendemail(status) {
 
       echo "jenkins job ${status} ${appVer}"
       body = "jenkins job ${status} \n " +
