@@ -10,6 +10,6 @@ def call() {
       echo "BUILD_URL : ${BUILD_URL}"              // https://web.saravanjs.com/job/tutonui/60/
       echo "JENKINS_HOME : ${JENKINS_HOME}"        // /var/lib/jenkins
       echo "WORKSPACE : ${WORKSPACE}"              // /var/lib/jenkins/workspace/tutonui
-      echo " abc : ${env.abc} " 
+      echo " abc : ${abc} " 
 
 }
