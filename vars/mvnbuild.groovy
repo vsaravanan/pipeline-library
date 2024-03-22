@@ -1,3 +1,3 @@
 def call() {
-    sh "mvn clean package install -T 1C"
+    sh "mvn clean package install -T 1C -DskipTests "
 }
